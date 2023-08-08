@@ -1,0 +1,81 @@
+// Asset created by Aptugo
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); //Import Font
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.suscripcion {
+    height: 100%;
+    background: #252222da;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & .suscripcionImagen {
+        background-color: #000000;
+        background-image: url('/img/office-collection e8518.png');
+        background-size: cover;
+        width: 50%;
+    }
+    & .suscripcionInfo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        //justify-content: center;
+        //align-items: center;      
+        width: 50%;
+        & h1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 106.8%;
+            text-align: left;
+            color: #e40b0b;
+            padding: 25px 0 20px;
+        }
+        & p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 132.4%;
+            text-align: left;
+            color: #A6ACBE;
+            width: 570px;
+            padding: 0 0 20px;
+        }
+        & .suscripcionField {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0px 10px 125px 10px;
+            & button {
+                height: 50px;
+                width: 175px;
+                background: #2196F3;
+                border-radius: 10px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 132.4%;
+                text-align: center;
+                text-transform: none;
+                color: #FFFFFF;
+            }
+            & > div { //Field
+                margin-top: 0;
+                margin-bottom: 0;
+                background: white;
+                & label[class*="focused"] {color: #5B321F;}
+                & div  {
+                    border-top-left-radius: unset;
+                    border-top-right-radius: unset;
+                    &::before {border-bottom: unset;}
+                    &::after {border-bottom: unset;}
+                    &:hover {border-bottom: unset;}
+                }
+            }
+        }
+    }
+}
